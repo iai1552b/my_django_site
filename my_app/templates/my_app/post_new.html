@@ -1,0 +1,12 @@
+﻿<html>
+	<head>
+		<title>Редактируем </title>
+	</head>
+	<body>
+		<h1>Новая запись</h1>
+		<form method="POST" class="post-form">{% csrf_token %}
+			{{ form.as_p }}
+			<button type="submit">Save</button>
+		</form>
+	</body>
+</html>
